@@ -6,9 +6,9 @@
 	<script type="text/javascript">
 		var radio = parseInt(prompt("Introduce el radio", 0)); // despliega una ventana de ingreso de datos, en la cual debe ir el radio del circulo
 		while (isNaN(radio) || radio < 0) { // verifica si es NaN o negativo para volver a pedir los datos en el caso de serlo
-			radio = parseInt(prompt("Los datos introducidos no son válidos, ingresalos de nuevo", 0)); // despliega una ventana de ingreso de datos, en la cual debe ir el radio del circulo
+			radio = parseInt(prompt("Los datos introducidos no son válidos, ingresa de nuevo los datos", 0)); // despliega una ventana de ingreso de datos, en la cual debe ir el radio del circulo
 		}
-		document.write(`<h1>El área del círculo es:<br>${Math.PI * radio * radio}</h1>`); // imprime el resultado en la pagina
+		document.write(`<h1>El área del círculo es:<br>${(Math.PI * radio * radio).toString().replace(".", ",")}</h1>`); // imprime el resultado en la pagina y remplaza el punto por una coma pq aki no somos gringos klk
 	</script>
 	<style type="text/css"> /* Styles pa que quede lacroso :v*/
 		* {
@@ -27,7 +27,6 @@
 <body>
 </body>
 </html>
-
 <!--
 	Pseudocodigo:
 	1. abrir el editor de codigo (ya se sublime, vsc, etc)
