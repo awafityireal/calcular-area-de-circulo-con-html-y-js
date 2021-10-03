@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>no se :v</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		var radio = parseInt(prompt("Introduce el radio", 0)); // despliega una ventana de ingreso de datos, en la cual debe ir el radio del circulo
+		while (isNaN(radio) || radio < 0) { // verifica si es NaN o negativo para volver a pedir los datos en el caso de serlo
+			radio = parseInt(prompt("Los datos introducidos no son válidos, ingresa de nuevo los datos", 0)); // despliega una ventana de ingreso de datos, en la cual debe ir el radio del circulo
+		}
+		document.write(`<h1>El área del círculo es:<br>${Math.PI * radio * radio}</h1>`); // imprime el resultado en la pagina
+	</script>
+	<style type="text/css"> /* Styles pa que quede lacroso :v*/
+		* {
+			font-size: 50px;
+			text-align: center;
+			font-family: unset;
+			padding: 0;
+			margin: 0;
+		}
+		h1 {
+			border: groove 10px rgb(100, 26, 26);
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+</body>
+</html>
+
+<!--
+	Pseudocodigo:
+	1. pedir los datos (el radio del circulo) al usuario
+	2. verificar si son NaN (Not a Number) o negativo para volverlos a solicitar si es el caso
+	3. imprimir en la pagina el resultado de pi * radio^2 (pi lo obtenemos de la clase Math)
+	4. darle estilo a la pagina (no es necesario pero queria que quedara kriminoso)
+	5. enviar al prosor de robotica xD
+-->
